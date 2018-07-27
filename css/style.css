@@ -25,3 +25,15 @@ header,
     color: white;
     font-weight: 400;
 }
+
+#intro {
+	height: 100%;
+}
+
+#intro {
+	background: url("http://res.cloudinary.com/cmcosta/image/upload/v1532194380/wedding/IMG_0228.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+}

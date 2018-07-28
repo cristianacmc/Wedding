@@ -38,3 +38,8 @@ header,
 	-o-background-size: cover;
 	-webkit-background-size: cover;
 }
+
+/* Google Maps */
+#map-container {
+	height: 400px;
+}

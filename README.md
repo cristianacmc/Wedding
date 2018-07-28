@@ -4,7 +4,7 @@
 
 ---
 
-###Overview
+### Overview
 
 This website was built to gather the information about my wedding and keep our friends and family up to date.
 

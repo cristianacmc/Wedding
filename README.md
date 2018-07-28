@@ -1,22 +1,20 @@
 
 
-________
-
 # Wedding Website
 
 ---
 
-Overview
+###Overview
 
-This website was build to gather the information about my wedding and let ours friends and family up to date.
+This website was built to gather the information about my wedding and keep our friends and family up to date.
 
 The code generates a static web page allowing visitors to browse the sections.
 
 
 ### Features
 
-- The navbar links bring you to the right section
-- A map of the location was added
+- The navbar links bring you to the right section and to the social media site
+- A map of the location
 
 
 ### Resources

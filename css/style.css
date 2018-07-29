@@ -6,11 +6,12 @@ header,
 	height: 100%;
 }
 
-/* Customize the navbrand */
+/* Navbrand */
 .f-title {
     font-family: 'Comfortaa', cursive;
     color: #ffbb33;
     font-weight: 400;
+    letter-spacing: 4px;
 }
 
 .s-title {
@@ -24,13 +25,16 @@ header,
     font-family: 'Comfortaa', cursive;
     color: white;
     font-weight: 400;
+    letter-spacing: 4px;
 }
+
+
+/* Main navigation */
 
 #intro {
 	height: 100%;
 }
 
-/* Main navigation */
 #intro {
 	background: url("http://res.cloudinary.com/cmcosta/image/upload/v1532194380/wedding/IMG_0228.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -42,5 +46,11 @@ header,
 /* Google Maps */
 #map-container {
 	height: 400px;
+}
+
+/* Footer */
+.brand-f {
+	font-weight: 700;
+	letter-spacing: 0;
 }
 

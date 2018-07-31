@@ -62,19 +62,15 @@
                     </ul>
                     <!-- Links -->
 
-                    <!-- Social icons -->
+                    <!-- Social icon -->
                     <ul class="navbar-nav nav-flex-icons">
                         <li class="nav-item">
-                            <a target="_blank" href="https://www.facebook.com/groups/626132807758438/" class="nav-link"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a target="_blank" href="" class="nav-link"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a target="_blank" href="" class="nav-link"><i class="fa fa-instagram"></i></a>
+                            <a target="_blank" href="https://www.facebook.com/groups/626132807758438/" class="nav-link"><i class="fa fa-facebook mr-4"></i></a>
                         </li>
                     </ul>
-                    <!-- /Social icons -->
+
+                    <!-- /Social icon -->
+                    <div id="google_translate_element"></div>
 
                 </div>
                 <!-- /Collapsible content -->
@@ -312,39 +308,40 @@
                     <div class="col-lg-5 col-md-12">
 
                         <!-- Material form contact -->
-                        <form>
-                            <p class="h4 text-center mb-4">Write to us/ RSVP</p>
+                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                            <p class="h4 text-center mb-5">Write to us/ RSVP</p>
 
                             <!-- Material input text -->
-                            <div class="md-form">
+                            <div class="md-form mb-4">
                                 <i class="fa fa-user prefix grey-text"></i>
-                                <input type="text" id="materialFormContactNameEx" class="form-control">
-                                <label for="materialFormContactNameEx">Your name</label>
+                                <input type="text" id="name" name="name" class="form-control">
+                                <label for="name" class="">Your name</label>
                             </div>
 
                             <!-- Material input email -->
-                            <div class="md-form">
+                            <div class="md-form mb-4">
                                 <i class="fa fa-envelope prefix grey-text"></i>
-                                <input type="email" id="materialFormContactEmailEx" class="form-control">
-                                <label for="materialFormContactEmailEx">Your email</label>
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
                             </div>
 
                             <!-- Material input subject -->
-                            <div class="md-form">
+                            <div class="md-form mb-4">
                                 <i class="fa fa-tag prefix grey-text"></i>
-                                <input type="text" id="materialFormContactSubjectEx" class="form-control">
-                                <label for="materialFormContactSubjectEx">Subject</label>
+                                <input type="text" id="subject" class="form-control">
+                                <label for="subject" class="">Subject</label>
                             </div>
 
                             <!-- Material textarea message -->
-                            <div class="md-form">
+                            <div class="md-form mb-5">
                                 <i class="fa fa-pencil prefix grey-text"></i>
-                                <textarea type="text" id="materialFormContactMessageEx" class="form-control md-textarea" rows="3"></textarea>
-                                <label for="materialFormContactMessageEx">Your message</label>
+                                <textarea type="text" id="message" name="message" class="form-control md-textarea" rows="3"></textarea>
+                                <label for="message">Your message</label>
                             </div>
 
-                            <div class="text-center mb-5 mt-4">
-                                <button class="btn btn-outline-warning" type="submit">Send <i class="fa fa-send" aria-hidden="true" ml-2"></i></button>
+                            <div class="text-center mb-4">
+                                <button class="btn btn-outline-warning" onclick="document.getElementById('contact-form').submit();">Send <i class="fa fa-send" aria-hidden="true" ml-2"></i></button>
                             </div>
                         </form>
                         <!-- /Form contact -->
@@ -361,19 +358,19 @@
                         <div class="row text-center">
 
                             <!-- Grid column -->
-                            <div class="col-md-4 mb-3"><p class="grey-text">
+                            <div class="col-md-4"><p class="grey-text">
                                 <i class="fa fa-map-marker" aria-hidden="true"></i>  Matriz de Alvor Church</p>
                             </div>
                             <!-- /Grid column -->
 
                             <!-- Grid column -->
-                            <div class="col-md-4 mb-3">
+                            <div class="col-md-4">
                                 <p class="grey-text"><i class="fa fa-calendar-times-o" aria-hidden="true"></i> Time as per your invitation</p>
                             </div>
                             <!-- /Grid column -->
 
                             <!-- Grid column -->
-                            <div class="col-md-4 mb-3">
+                            <div class="col-md-4">
                                 <p class="grey-text"><i class="fa fa-phone" aria-hidden="true"></i> +353 083 8888888</p>
                             </div>
                             <!-- /Grid column -->
@@ -510,7 +507,8 @@
           interval: 2000,
         })
     </script>
-        <!-- Google maps settings -->
+
+    <!-- Google maps settings -->
     <script>
       var map;
       var myLatLng = {lat: 37.131495, lng: -8.594557};
@@ -529,6 +527,16 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYQYE-V622Ci0S_4UcOIp5Y5D9mXI5sg0&callback=initMap">
     </script>
+
+     <!-- Website translator -->
+     <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 
 </html>
